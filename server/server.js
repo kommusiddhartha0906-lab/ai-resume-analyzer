@@ -21,3 +21,10 @@ const PORT = 5050;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+app.post("/analyze", (req, res) => {
+  const { resume } = req.body;
+
+  res.json({
+    result: "Resume received: " + resume.substring(0, 50),
+  });
+});
