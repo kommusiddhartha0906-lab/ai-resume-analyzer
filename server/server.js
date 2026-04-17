@@ -13,7 +13,7 @@ app.use(express.json());
 
 // test route
 app.get("/", (req, res) => {
-  res.send("EXPRESS WORKING");
+  res.send("Feature A update");
 });
 
 const PORT = 5050;
