@@ -14,7 +14,7 @@ app.use(express.json());
 
 // root route
 app.get("/", (req, res) => {
-  res.send("Backend v2 running with improvements");
+res.send("Feature A and B combined update");
 });
 
 // start server
