@@ -8,14 +8,16 @@ dotenv.config();
 
 const app = express();
 
+// middleware
 app.use(cors());
 app.use(express.json());
 
-// test route
+// root route
 app.get("/", (req, res) => {
-  res.send("Feature B update");
+res.send("Feature A and B combined update");
 });
 
+// start server
 const PORT = 5050;
 
 app.listen(PORT, () => {
